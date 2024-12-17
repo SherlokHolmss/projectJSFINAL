@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Популярні інтерактивні ігри</h1>
+        <div class="line"></div>
+        <!-- Перевір в який рік ти народився -->
+        <h2 class="game-title">Перевір в який рік ти народився</h2>
+        <div class="game-wrap">
+            <form action="" class="game-form" id="year-form">
+                <input class="game-input" id="year-input" type="number" min="1" max="2024" placeholder="Введіть рік народження">
+                <button class="game-button" id="check-year-button">
+                    <svg class="game-svg" width="17px" height="17px">
+                        <use href="./symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+            <p id="year-result" class="game-result"></p>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- Вгадування числа -->
+        <h2 class="game-title">Вгадай число, яке загадав комп'ютер</h2>
+        <div class="game-wrap2">
+            <form action="" class="game-form2" id="guess-number-form">
+                <input class="game-input2" id="game-input" type="number" min="1" max="10" placeholder="Введіть число">
+                <button class="game-button" id="guess-number-button">
+                    <svg class="game-svg" width="17px" height="17px">
+                        <use href="./symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+            <p id="game-result" class="game-result"></p>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- Калькулятор -->
+        <h2 class="game-title">Калькулятор</h2>
+        <div class="calculator-wrap">
+            <form class="calculator-form" id="calculator-form">
+                <input id="number1" type="number" class="calculator-input" placeholder="Введіть число">
+                <div class="calculator-operations">
+                    <button type="button" class="operation-button" id="plus-button">+</button>
+                    <button type="button" class="operation-button" id="multiply-button">*</button>
+                    <button type="button" class="operation-button" id="minus-button">-</button>
+                    <button type="button" class="operation-button" id="divide-button">/</button>
+                </div>
+                <input id="number2" type="number" class="calculator-input" placeholder="Введіть число">
+                <button class="calculator-button" id="calculate-button">=</button>
+            </form>
+            <p class="calculator-result" id="calculator-result">Результат</p>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- Калькулятор часу -->
+        <h2 class="game-title">Калькулятор часу</h2>
+        <div class="time-wrap">
+            <form class="time-form" id="time-form">
+                <input type="number" id="time-input" class="time-input" placeholder="Введіть число">
+                <button type="button" class="time-button" id="calculate-time-button">
+                    <svg class="game-svg" width="17px" height="17px">
+                        <use href="./symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+            <p class="time-line"></p>
+            <p id="time-result" class="time-result"></p>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- Введіть три числа -->
+        <h2 class="game-title">Введіть 3 числа</h2>
+        <div class="number-wrap">
+            <form id="number-inputs" class="number-inputs">
+                <input id="number-input1" type="number" class="number-input" placeholder="Введіть число">
+                <input id="number-input2" type="number" class="number-input" placeholder="Введіть число">
+                <input id="number-input3" type="number" class="number-input" placeholder="Введіть число">
+            </form>
+            <p id="number-result" class="number-result">Введіть усі числа</p>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- Наша команда -->
+        <h2 class="game-title">Наша команда</h2>
+        <div class="slider-wrap">
+            <button class="arrow left" id="prev" disabled>
+                <svg class="game-svg" width="50px" height="100px">
+                    <use href="./symbol-defs.svg#icon-arrow-left"></use>
+                </svg>
+            </button>
+            <div class="slider-images">
+                <div class="slide active">
+                    <img src="./img/1.jpg" alt="Студент 1" class="slider-image">
+                    <p class="slider-title">Іван</p>
+                    <p>Інформація про роботу, яку він/вона виконав/ла</p>
+                </div>
+                <div class="slide">
+                    <img src="./img/2.jpg" alt="Студент 2" class="slider-image">
+                    <p class="slider-title">Міша</p>
+                    <p>Інформація про роботу, яку він/вона виконав/ла</p>
+                </div>
+                <div class="slide">
+                    <img src="./img/3.jpg" alt="Студент 3" class="slider-image">
+                    <p class="slider-title">Давид</p>
+                    <p>Інформація про роботу, яку він/вона виконав/ла</p>
+                </div>
+                <div class="slide">
+                    <img src="./img/Rectangle.png" alt="Студент 4" class="slider-image">
+                    <p>Ім'я студента 4</p>
+                    <p>Інформація про роботу, яку він/вона виконав/ла</p>
+                </div>
+            </div>
+            <button class="arrow right" id="next">
+                <svg class="game-svg" width="50px" height="100px">
+                    <use href="./symbol-defs.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="slided-lines">
+            <div class="slider-line active"></div>
+            <div class="slider-line"></div>
+            <div class="slider-line"></div>
+            <div class="slider-line"></div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

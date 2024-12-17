@@ -1,0 +1,296 @@
+.title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.26px;
+    margin-bottom: 36px;
+}
+
+.line {
+    width: 536px;
+    height: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.game-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.game-form, .game-form2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    height: 25px;
+    
+    &.game-form {
+        width: 215px;
+        margin-left: 60px;
+        height: 35px;
+    }
+
+    &.game-form2 {
+        width: 150px;
+        height: 35px;
+    }
+}
+
+.game-input, .game-input2, .time-input {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 12px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 33px;
+    background-color: rgba(215, 215, 215, 1);
+    border: none;
+    color: rgba(126, 126, 126, 1);
+    outline: none;
+    appearance: none;
+    font-family: Montserrat Alternates;
+
+    &.game-input {
+        width: 180px;
+    }
+
+    &.game-input2 {
+        width: 115px;
+    }
+}
+
+.game-button, .time-button {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: black;
+    border: none;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.game-result {
+    font-size: 12px;
+    width: 260px;
+}
+
+.game-wrap, .game-wrap2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 202px;
+    height: 35px;
+    margin-bottom: 36px;
+}
+
+.calculator-input {
+    width: 135px;
+    height: 35px;
+    text-align: center;
+    padding: 0;
+    font-size: 12px;
+    border-radius: 30px;
+    background-color: rgba(215, 215, 215, 1);
+    border: none;
+    color: rgba(126, 126, 126, 1);
+    outline: none;
+    appearance: none;
+    font-family: Montserrat Alternates;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.calculator-wrap {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    max-width: 629px;
+    height: 60px;
+    margin-bottom: 36px;
+}
+
+.calculator-form {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.calculator-operations {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    height: 70px;
+    gap: 10px;
+    row-gap: 10px;
+}
+
+.operation-button, .calculator-button {
+    width: 27px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.calculator-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(126, 126, 126, 1);
+    background-color: rgba(215, 215, 215, 1);
+    border-radius: 30px;
+    font-size: 12px;
+    width: 118px;
+    height: 35px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 38px;
+}
+
+.time-form {
+    display: flex;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 30px;
+}
+
+.time-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    margin-bottom: 36px;
+}
+
+.time-input {
+    width: 115px;
+}
+
+.time-line {
+    border: 1px dashed black;
+    width: 100px;
+}
+
+.time-result {
+    width: 150px;
+    height: 15px;
+    font-weight: 400;
+}
+
+.number-wrap {
+    margin-bottom: 36px;
+}
+
+.number-input {
+    height: 35px;
+    width: 135px;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    color: rgba(126, 126, 126, 1);
+    background-color: rgba(215, 215, 215, 1);
+    font-size: 12px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    outline: none;
+    appearance: none;
+}
+
+.number-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    gap: 38px;
+}
+
+.number-result {
+    margin-top: 36px;
+}
+
+.slider-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.slider-images {
+    display: flex;
+    overflow: hidden;
+    width: 430px;
+    height: 270px;
+    position: relative;
+}
+
+.slide {
+    width: 430px;
+    height: 270px;
+    transition: transform 0.5s ease;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+        display: flex;
+    }
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    top: 25%;
+    transform: translateY(-50%);
+
+    &.left {
+        left: 100px;
+    }
+
+    &.right {
+        right: 100px;
+    }
+
+    &[disabled] {
+        cursor: default;
+        opacity: 0.5;
+    }
+}
+.slider-image{
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.slider-title{
+    margin-bottom: 20px;
+}
+.slider-lines {
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.slider-line {
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+.slider-line.active {
+    width: 30px;
+    background-color: rgba(121, 121, 121, 1);
+}
