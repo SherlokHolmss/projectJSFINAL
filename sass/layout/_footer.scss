@@ -1,0 +1,66 @@
+.footer{
+    padding: 60px 0;
+    &-container{
+        display: flex;
+        gap: 182px;
+        align-items: center;
+        &-social{
+            display: flex;
+            align-items: center;
+            gap: 187px;
+        }
+    }
+}
+
+.footer-contacts{
+    width: 207px;
+}
+
+
+.contact-link{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.4px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.subscription-form{
+    display: flex;
+    column-gap: 36px;
+    row-gap: 18px;
+    flex-wrap: wrap;
+}
+
+.subscription-input{
+    width: 204px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgba(215, 215, 215, 1);
+    color: rgba(126, 126, 126, 1);
+    padding: 10px;
+    &::placeholder{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.63px;
+        color: rgba(126, 126, 126, 1);
+    }
+}
+
+.subscription-button{
+    width: 107px;
+    height: 35px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    line-height: 14.63px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.subscription-label{
+    font-size: 6px;
+    line-height: 7.31px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}

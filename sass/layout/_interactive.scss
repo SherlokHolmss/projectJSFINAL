@@ -14,14 +14,15 @@
     margin-bottom: 36px;
 }
 
-.game-form, .game-form2 {
+.game-form,
+.game-form2 {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     height: 25px;
-    
+
     &.game-form {
         width: 215px;
         margin-left: 60px;
@@ -34,7 +35,9 @@
     }
 }
 
-.game-input, .game-input2, .time-input {
+.game-input,
+.game-input2,
+.time-input {
     text-align: left;
     padding-left: 10px;
     font-size: 12px;
@@ -57,7 +60,8 @@
     }
 }
 
-.game-button, .time-button {
+.game-button,
+.time-button {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: black;
@@ -72,7 +76,8 @@
     width: 260px;
 }
 
-.game-wrap, .game-wrap2 {
+.game-wrap,
+.game-wrap2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +128,8 @@
     row-gap: 10px;
 }
 
-.operation-button, .calculator-button {
+.operation-button,
+.calculator-button {
     width: 27px;
     height: 25px;
     background-color: black;
@@ -221,6 +227,7 @@
     width: 430px;
     height: 270px;
     position: relative;
+
 }
 
 .slide {
@@ -258,14 +265,19 @@
         opacity: 0.5;
     }
 }
-.slider-image{
+
+.slider-image {
     width: 150px;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20%;
+    display: block;
+}
+
+.slider-title {
     margin-bottom: 20px;
 }
-.slider-title{
-    margin-bottom: 20px;
-}
+
 .slider-lines {
     margin-bottom: 36px;
     display: flex;
@@ -283,6 +295,7 @@
 
 
 }
+
 .slider-line.active {
     width: 30px;
     background-color: rgba(121, 121, 121, 1);
