@@ -15,7 +15,9 @@
     width: 720px;
     height: 240px;
     margin: 0 auto;
-    border-bottom: 2px solid black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
     margin-bottom: 36px;
 }
 

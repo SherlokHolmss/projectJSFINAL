@@ -20,12 +20,14 @@ img {
 
 a {
     text-decoration: none;
+    color: inherit !important;
 }
 
 button {
     border: none;
     cursor: pointer;
     padding: 0;
+    color: inherit;
 }
 
 ul {

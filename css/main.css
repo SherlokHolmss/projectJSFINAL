@@ -19,12 +19,14 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit !important;
 }
 
 button {
   border: none;
   cursor: pointer;
   padding: 0;
+  color: inherit;
 }
 
 ul {
@@ -63,14 +65,32 @@ input[type=text]::-webkit-inner-spin-button {
 .line {
   width: 536px;
   height: 0;
-  border: 1px solid black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: inherit;
   border-radius: 10px;
   margin: 0 auto;
 }
 
 body {
-  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat Alternates";
   text-align: center;
+}
+
+.light-theme {
+  color: black !important;
+  background-color: white;
+  fill: black;
+  border-color: black;
+}
+
+.dark-theme {
+  color: white !important;
+  background-color: rgb(33, 33, 33);
+  fill: white;
+  border-color: white;
 }
 
 .container {
@@ -432,7 +452,7 @@ body {
 }
 
 .slider-title {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .slider-lines {
@@ -630,7 +650,9 @@ body {
   width: 720px;
   height: 240px;
   margin: 0 auto;
-  border-bottom: 2px solid black;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
   margin-bottom: 36px;
 }
 
@@ -712,6 +734,10 @@ body {
     top: 190px;
   }
 }
+.game-football-wrap {
+  margin-bottom: 36px;
+}
+
 .football-game-field {
   width: 720px;
   height: 220px;
@@ -759,6 +785,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: black !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -875,11 +902,14 @@ body {
   width: 207px;
 }
 
+.contact-item {
+  text-align: left;
+}
+
 .contact-link {
   font-size: 12px;
   font-weight: 400;
   line-height: 20.4px;
-  text-align: left;
   color: rgb(0, 0, 0);
 }
 
@@ -949,5 +979,169 @@ body {
   font-size: 6px;
   line-height: 7.31px;
   text-align: left;
-  color: rgb(0, 0, 0);
+  color: inherit;
+}
+
+.header {
+  padding: 20px;
+}
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 81px;
+}
+.navigations a {
+  color: inherit;
+}
+.navigation-btn {
+  background-color: transparent;
+}
+.navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+.navigation-btn:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 51px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theme-toggle-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 20px;
+  border-radius: 11px;
+  background-color: rgb(122, 122, 122);
+}
+.theme-toggle-button > span {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 20.5px;
+  border-radius: 11px;
+  border: 0.5px solid black;
+  background-color: white;
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.2s;
+  transition: background-color 0.5s, -webkit-transform 0.2s;
+  transition: transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s, -webkit-transform 0.2s;
+}
+
+.dark-mode-switch {
+  -webkit-transform: translateX(19.5px);
+          transform: translateX(19.5px);
+  background-color: black !important;
+  border: 0.5px solid white !important;
+}
+
+.drop-icon {
+  fill: inherit;
+}
+
+.opened-icon {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+.dropdown {
+  position: absolute;
+  left: 140px;
+  top: 40px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: inherit;
+  border-top: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 160px;
+  height: 105px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  overflow: hidden;
+}
+.dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dropdown-item:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 1px solid black;
+}
+.dropdown-btn {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.dropdown-btn.light {
+  background-color: white;
+}
+.dropdown-btn.light:hover {
+  background-color: rgb(241, 241, 241);
+}
+.dropdown-btn.dark {
+  background-color: rgb(33, 33, 33);
+}
+.dropdown-btn.dark:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+.close {
+  visibility: hidden;
+  height: 0;
 }/*# sourceMappingURL=main.css.map */
