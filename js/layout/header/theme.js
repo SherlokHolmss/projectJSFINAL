@@ -4,6 +4,7 @@ export function changeThemeOnPage() {
     const body = document.querySelector("body");
     const dropdownBtns = document.querySelectorAll(".dropdown-btn");
     const footerModal = document.querySelector(".footer-modal");
+    const allContainers = document.querySelectorAll(".container");
 
     if (changeThemeSpan.classList[1] === "light-mode-switch") {
         theme = "dark";
@@ -14,4 +15,7 @@ export function changeThemeOnPage() {
         el.className = `dropdown-btn ${theme}`;
     });
     footerModal.className = `footer-modal ${theme}`;
+    allContainers.forEach(el => {
+        el.className = `container ${theme}`
+    });
 }

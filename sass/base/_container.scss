@@ -1,5 +1,12 @@
 .container{
     max-width: 1090px;
     margin: 0 auto;
-    background-color: white;
+
+    &.light {
+        background-color: white;
+    }
+
+    &.dark{
+        background-color: rgb(33, 33, 33);
+    }
 }

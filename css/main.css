@@ -122,7 +122,12 @@ body {
 .container {
   max-width: 1090px;
   margin: 0 auto;
+}
+.container.light {
   background-color: white;
+}
+.container.dark {
+  background-color: rgb(33, 33, 33);
 }
 
 .title {
