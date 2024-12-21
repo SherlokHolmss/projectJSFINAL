@@ -114,8 +114,9 @@ body {
 }
 
 .container {
-  width: 1090px;
+  max-width: 1090px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .title {
@@ -500,6 +501,12 @@ body {
 .slider-line.active {
   width: 30px;
   background-color: rgb(121, 121, 121);
+}
+
+main {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .backdrop {
