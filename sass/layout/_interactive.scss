@@ -144,7 +144,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(126, 126, 126, 1);
+    color: rgb(24, 24, 24);
     background-color: rgba(215, 215, 215, 1);
     border-radius: 30px;
     font-size: 12px;
@@ -174,7 +174,9 @@
 }
 
 .time-line {
-    border: 1px dashed black;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: inherit;
     width: 100px;
 }
 

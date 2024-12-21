@@ -44,7 +44,6 @@ input {
     box-shadow: none;
     background-color: transparent;
     color: inherit;
-    cursor: default;
 }
 
 input:focus,
@@ -59,4 +58,9 @@ input[type="text"]::-webkit-outer-spin-button,
 input[type="text"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+input,
+input::placeholder {
+    color: rgb(24, 24, 24) !important;
 }

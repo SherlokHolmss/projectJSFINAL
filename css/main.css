@@ -44,7 +44,6 @@ input {
           box-shadow: none;
   background-color: transparent;
   color: inherit;
-  cursor: default;
 }
 
 input:focus,
@@ -60,6 +59,27 @@ input[type=text]::-webkit-outer-spin-button,
 input[type=text]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: rgb(24, 24, 24) !important;
+}
+
+input::-moz-placeholder {
+  color: rgb(24, 24, 24) !important;
+}
+
+input:-ms-input-placeholder {
+  color: rgb(24, 24, 24) !important;
+}
+
+input::-ms-input-placeholder {
+  color: rgb(24, 24, 24) !important;
+}
+
+input,
+input::placeholder {
+  color: rgb(24, 24, 24) !important;
 }
 
 .line {
@@ -286,7 +306,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: rgb(126, 126, 126);
+  color: rgb(24, 24, 24);
   background-color: rgb(215, 215, 215);
   border-radius: 30px;
   font-size: 12px;
@@ -326,7 +346,9 @@ body {
 }
 
 .time-line {
-  border: 1px dashed black;
+  border-width: 1px;
+  border-style: dashed;
+  border-color: inherit;
   width: 100px;
 }
 
@@ -502,7 +524,6 @@ body {
   border-radius: 20px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgb(255, 255, 255);
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -515,7 +536,13 @@ body {
   line-height: 24.2px;
   text-align: center;
   margin-top: 14px;
-  color: rgb(0, 0, 0);
+  color: inherit;
+}
+.footer-modal.dark {
+  background-color: rgb(33, 33, 33);
+}
+.footer-modal.light {
+  background-color: white;
 }
 
 .footer-modal-close-btn {
