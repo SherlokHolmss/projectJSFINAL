@@ -322,6 +322,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
   border: none;
@@ -621,7 +627,7 @@ main {
   text-align: center;
   color: rgb(255, 255, 255);
   width: 182px;
-  height: 25px;
+  height: 35px;
   padding: 10px 20px;
   border-radius: 20px;
   background-color: rgb(0, 0, 0);
@@ -961,7 +967,7 @@ main {
 
 .subscription-input {
   width: 204px;
-  height: 20px;
+  height: 35px;
   border-radius: 20px;
   background-color: rgb(215, 215, 215);
   color: rgb(126, 126, 126);
