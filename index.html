@@ -10,7 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -18,7 +20,7 @@
     <header class="header">
         <div class="container light">
             <div class="header-wrapper">
-                <div class="navigations"> 
+                <div class="navigations">
                     <a href="./index.html" class="header-logo">
                         <svg class="logo-icon" width="93" height="38.15">
                             <use href="./images/symbol-defs.svg#logo-icon"></use>
@@ -60,7 +62,7 @@
                             </svg>
                         </span>
                     </button>
-                    <p class="welcome-text">Вітаємо, User!</p>
+                    <p class="welcome-text">Вітаємо, <span id="userName">User!</span></p>
                 </div>
             </div>
         </div>
@@ -71,8 +73,8 @@
             <div class="line"></div>
 
             <div class="interactive-section">
-            <!-- Перевір в який рік ти народився -->
-                <div class="block"  data-category="numerical">
+                <!-- Перевір в який рік ти народився -->
+                <div class="block" data-category="numerical">
                     <h2 class="game-title">Перевір в який рік ти народився</h2>
                     <div class="game-wrap">
                         <form action="" class="game-form" id="year-form">
@@ -89,7 +91,7 @@
                     <div class="line"></div>
                 </div>
 
-                
+
 
                 <!-- Вгадування числа -->
                 <div class="block" data-category="numerical">
@@ -187,7 +189,7 @@
                 </div>
 
                 <!-- динозавр -->
-                
+
                 <div class="block" data-category="game">
                     <h2 class="game-title">Google динозавр</h2>
                     <div class="game-dino-wrap">
@@ -221,11 +223,11 @@
                             <input id="number-input3" type="number" class="number-input" placeholder="Введіть число">
                         </form>
                         <p id="number-result" class="number-result">Введіть усі числа</p>
-                        
+
                     </div>
                     <div class="line"></div>
                 </div>
-                
+
 
                 <!-- Наша команда -->
                 <div class="block" data-category="acquaintance">
@@ -264,7 +266,7 @@
                             </svg>
                         </button>
                     </div>
-                    
+
                     <div class="slider-lines">
                         <div class="slider-line active"></div>
                         <div class="slider-line"></div>
@@ -285,14 +287,16 @@
                             <div class="upper-buttons">
                                 <div class="left-half">
                                     <li class="scientist-button-item">
-                                        <button class="scientist-button" id="scientists-19th">Які вчені народилися в 19 ст.</button>
+                                        <button class="scientist-button" id="scientists-19th">Які вчені народилися в 19
+                                            ст.</button>
                                     </li>
                                     <li class="scientist-button-item">
                                         <button class="scientist-button" id="sort-by-alphabet">Відсортувати вчених за
                                             алфавітом</button>
                                     </li>
                                     <li class="scientist-button-item">
-                                        <button class="scientist-button" id="sort-by-age">Відсортувати вчених за кількістю прожитих
+                                        <button class="scientist-button" id="sort-by-age">Відсортувати вчених за
+                                            кількістю прожитих
                                             років</button>
                                     </li>
                                     <li class="scientist-button-item">
@@ -306,22 +310,26 @@
                                             Einshtein</button>
                                     </li>
                                     <li class="scientist-button-item">
-                                        <button class="scientist-button" id="start-surname-with-C">Знайти вчених, прізвища яких
+                                        <button class="scientist-button" id="start-surname-with-C">Знайти вчених,
+                                            прізвища яких
                                             починаються на на літеру “С”</button>
                                     </li>
                                     <li class="scientist-button-item">
-                                        <button class="scientist-button" id="start-name-with-A">Видалити всіх вчених, ім’я яких
+                                        <button class="scientist-button" id="start-name-with-A">Видалити всіх вчених,
+                                            ім’я яких
                                             починається на “А”</button>
                                     </li>
                                     <li class="scientist-button-item">
-                                        <button class="scientist-button" id="shortest-and-longest-lifespan">Знайти вченого, який
+                                        <button class="scientist-button" id="shortest-and-longest-lifespan">Знайти
+                                            вченого, який
                                             прожив найдовше і вченого,
                                             який прожив найменше</button>
                                     </li>
                                 </div>
                             </div>
                             <li class="scientist-button-item lower">
-                                <button class="scientist-button" id="same-initials">Знайти вчених, в яких співпадають перші літери
+                                <button class="scientist-button" id="same-initials">Знайти вчених, в яких співпадають
+                                    перші літери
                                     імені і прізвища</button>
                             </li>
                         </ul>
@@ -394,6 +402,17 @@
             </button>
         </div>
     </div>
+    <!-- Модалка -->
+        <div class="modal-window" id="modal">
+            <div class="modal-content">
+                <button class="close">x</button>
+                <p class="modal-desc">Привіт! <br> Ви потрапили на сайт інтерактивних ігор та завдань <br> Сподіваємось, що
+                    вам сподобається і ви отримаєте позитивні емоції! <br> Бажаємо Вам гарно провести час!</p>
+                <p class="modal-desc2">Введіть своє ім'я:</p>
+                <input class="modal-input" type="text" id="inputUserName" placeholder="Ваше ім'я...">
+                <button class="modal-btn">Зберегти</button>
+            </div>
+        </div>
     <script src="./js/main.js" type="module"></script>
     <script src="./js/games/threeNumbes.js"></script>
 </body>

@@ -21,6 +21,7 @@ import './games/game-rps.js';
 import './games/dinosaur.js';
 import './games/footbal.js';
 import './games/scientists.js';
+import './modals/greeting-modal.js';
 
 // хедер
 const changeThemeBtn = document.querySelector(".theme-toggle-button");
@@ -38,6 +39,7 @@ dropdownList.addEventListener("click", (event) => {
         filter(event, interactive);
     }
 });
+
 
 document.getElementById('year-form').addEventListener('submit', checkYearCallback);
 document.getElementById('check-year-button').addEventListener('click', checkYearCallback);
